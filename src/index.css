@@ -1,0 +1,85 @@
+/* Нормалайз вхлдить у стандартний пакет react app  */
+/* @import-normalize; */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.root {
+  margin-top: 50px;
+ text-align: center;
+ 
+}
+.profile {
+  margin-right: auto;
+  margin-left: auto;
+text-align: center;
+width: 450px;
+border: solid 3px red;
+border-radius: 50px;
+overflow: hidden;
+}
+.description{
+  background-color: rgba(206, 219, 235, 0.966);
+  
+}
+.avatar {
+  overflow: hidden;
+  width: 450px;
+ border-radius: 50%;
+}
+.name{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.location{
+  margin-top: 10px;
+  font-size: 25px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.tag{
+  font-size: 25px;
+}
+.stats{
+  display: flex;
+  gap: 2px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.label{
+  display: inline-block;
+}
+li{
+  z-index: -100;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+ width: 147px;
+ height: 130px;
+ background-color: rgb(172, 168, 168);
+ border: solid 2px rgb(100, 167, 238);
+}
+.label{
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.quantity{
+  font-size: 30px;
+  font-weight: 600;
+}
