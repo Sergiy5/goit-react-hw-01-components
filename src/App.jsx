@@ -1,17 +1,14 @@
-import Profile from "./components/Profile"
-import user from './user.json'
+import Profile from "./components/Profil/profile"
+import Statistics from './components/Statistics/statistic-list'
+import FriendList from "./components/FriendList/friend-list"
+import TransactionsHistory from "./components/TransactionHistory/transaction-history"
 
-// const user = {
-//   "username": "Jacques Gluke",
-//   "tag": "jgluke",
-//   "location": "Ocho Rios, Jamaica",
-//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-//   "stats": {
-//     "followers": 5603,
-//     "views": 4827,
-//     "likes": 1308
-//   }
-// }
+import user from './user.json'
+import stats from './statistics.json'
+import friends from './friends.json'
+import transactions from './transactions.json'
+
+
 
 
 export default function App() {
@@ -22,6 +19,10 @@ export default function App() {
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-/>
+        />
+        <Statistics title="Upload stats" stats={stats} />
+        <Statistics stats={stats} />
+        <FriendList allFriends={friends} />
+        <TransactionsHistory items={ transactions } />
     </>
 }
